@@ -1,0 +1,141 @@
+/*p{
+    color: red;
+}
+    p est le selecteur c tout element de html
+    color c une propriete de ce selecteur
+    red est la valeur attribuée
+    */
+
+html, body {
+        height: 100%; 
+        margin: 0; 
+        padding: 0; 
+}
+html{
+    font-size: 10px;
+    font-family: "Open Sans",sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+body{
+    /*font-family: Helvetica Neue, Helvetica,Arial,sans-serif; */
+    /*border:5px solid rgb(215, 66, 138);
+    background-color: rgb(214, 206, 214);*/
+    background-image: url('../images/fond.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+h2{
+    font-size: 16px;
+    color:rgb(192, 173, 164);
+}
+h1{
+    font-size: 50px;
+    text-align: left ;
+    margin:0;
+    padding:5px 0;
+    color:black;
+    line-height: 50px;
+    /*text-shadow: 3px 3px 3px rgb(199, 174, 192);*/
+}
+button{
+    background-color:rgb(240, 237, 234);
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 0px;
+    cursor: pointer;
+}
+p{
+   font-size: 16px;
+   color: white;
+   line-height:1,25;
+   letter-spacing:1px;
+   text-align:left;
+}
+img{
+    display:block;
+    margin:0 auto;
+}
+.line-break{
+  display:block;
+}
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+  
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.bloc-p {
+  display: flex;
+  align-items: start;
+  justify-content:space-between;
+  padding: 100px 50px; 
+
+}
+.bloc1{
+  flex:1;
+  padding:50px 0px;
+}
+.img-accueil{
+   width: 600px;
+   margin-left:20px;
+  }
+.navbar-logo {
+    height: 50px; /* Ajuste la hauteur de l'image */
+    margin-right: 20px; /* Espace entre l'image et les liens */
+    margin-left: 50px;
+}
+/* Changer la couleur au survol */
+.navbar-list li a:hover {
+    background-color: #575757; /* Change la couleur de fond des liens au survol */
+    border-radius: 5px; /* Ajoute des coins arrondis au survol */
+  }
+/* Styles pour les liens */
+.navbar-list li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA4008; /* Le texte des liens est blanc */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    padding: 10px 20px; /* Ajoute un espacement autour des liens */
+    display: block; /* Rend l'élément lien occupé toute la zone disponible du `<li>` */
+  }
+/* Liste de navigation horizontale */
+.navbar-list {
+    list-style-type: none; /* Supprime les puces des éléments de liste */
+    margin: 0; /* Supprime les marges de la liste */
+    padding: 0; /* Supprime le padding de la liste */
+    display: flex; /* Affiche les éléments de liste en ligne */
+    justify-content:space-evenly; /* Répartit les éléments de manière uniforme sur toute la largeur */
+    flex-grow: 1; /* Prend le reste de l'espace disponible pour aligner les éléments */
+
+  }
+/* Styles de base pour la barre de navigation */
+.navbar {
+    background-color: white; /* Couleur de fond de la barre (gris foncé) */
+    padding: 15px; /* Espacement à l'intérieur de la barre (au-dessus et en dessous) */
+    position: fixed; /* La barre est fixée en haut de la page, même si on fait défiler */
+    top: 0; /* Positionne la barre en haut de la fenêtre */
+    width: 100%; /* La barre prend toute la largeur de la fenêtre */
+    left: 0; 
+    z-index: 1000; /* Place la barre au-dessus du contenu de la page pour éviter qu'elle soit masquée */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items:flex-end; /* Aligne verticalement les éléments de la barre */
+  }
+        
+  /*
+  Explication du sélecteur combiné .navbar-list li a :
+.navbar-list : Sélectionne l'élément avec la classe navbar-list, qui est probablement un élément <ul>.
+li : Cible les éléments <li> (éléments de liste) qui se trouvent à l'intérieur de .navbar-list.
+a : Cible les éléments <a> (liens) à l'intérieur des <li>.
+Donc, .navbar-list li a signifie que le style s'applique à tous les éléments <a> qui sont des enfants d'un élément <li>, qui eux-mêmes sont des enfants de l'élément ayant la classe .navbar-list.
+*/
