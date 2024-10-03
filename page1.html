@@ -5,11 +5,88 @@
     <link href="styles/page1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <form method="post" action="traitement.php">
+    <fieldset id="section1">
+      <legend>Informations personnelles:</legend>
+      <label for="nom">Votre nom: </label>
+      <input type="text" id="nom" name="nom" autocomplete="on"><br>
+      <label for="prénom">Votre prénom: </label>
+      <input type="text" id="prénom" name="prenom" ><br>
+      <label for="ddn">Votre date de naissance:</label>  
+      <input type="date" id="ddn" name="ddn"><br> 
+      <label>Quel est votre sexe?</label> 
+      <input type="radio" id="homme" name="sexe" value="homme">
+      <label for="homme">Un homme</label><br>
+      <input type="radio" id="femme" name="sexe" value="femme" checked="checked">
+      <albel for="femme">Une femme</albel><br><br> 
+    </fieldset>
+    <fieldset id="section2">
+      <legend>Informations suplémentaires:</legend>
+      <label for="email">Entrez votre email:</label>
+      <input type="email" id="email" name="email" required="required"><br>
+      <label for="tel">Entrez votre numéro:</label>
+      <input type="number" id="tel" name="tel" max="0799999999" min="0500000000"><br>
+      <label for="pass">Entrez un mot de passe: </label>
+      <input type="password" id="pass" name="pass"><br>
+      <label for="passconfim">Confirmez votre mot de passe: </label>
+      <input type="password" id="passconfim" name="passconfim"><br>
+      <label for="présentation">Présentez vous en quelques lignes: </label><br>
+      <textarea id="présentation" name="presentation" placeholder="Hi,je m'appelle Meriem..." ></textarea><br>
+      <labal for="site">Entez les liens de vos projets:</labal>
+      <input type="url" id="site" name="site"><br>
+    </fieldset>
+
+    <fieldset>
+      <label >Quels sont les langues que vous métrisez? </label><br>
+      <input type="checkbox" id="arabe" nom="langue">
+      <label for="arabe">Arabe</label><br>
+      <input type="checkbox" id="fr" nom="langue">
+      <label for="fr">Français</label><br>
+      <input type="checkbox" id="anglais" nom="langue">
+      <label for="anglais">Anglais</label><br>
+      <label for="domaine">Quel est votre domaine?</label>
+      <input type="text" id="domaine" name="domaine"><br>
+      <label>Quels sont vos loisirs?</label><br>
+      <input type="checkbox" id="design" nom="domaine" checked>
+      <label for="design">design</label>
+      <input type="checkbox" id="Sport" nom="domaine">
+      <label for="web">Sport</label>
+      <input type="checkbox" id="photographie" nom="domaine">
+      <label for="photographie">photographie</label>
+      <input type="checkbox" id="écriture" nom="domaine">
+      <label for="écriture">écriture</label>
+      <input type="checkbox" id="voyage" nom="domaine">
+      <label for="voyage">Voyage</label>
+      <br>
+      <label>Quel est votre pays?</label>
+      <select>
+        <optgroup label="Afrique">
+          <option value="Algerie" selected="selected">Algérie</option>
+          <option value="maroc">Maroc</option> 
+          <option value="Cameroun">Cameroun</option>
+          <option value="egypte">Egypte</option>
+        </optgroup>
+        <optgroup label="Asie">
+          <option value="Dubai">Dubai</option>
+          <option value="japon">Japon</option>
+          <option value="libon">Libon</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="france">France</option>
+          <option value="germanie">Germanie</option>
+          <option value="Hongrie">Hongrie</option>
+          <option value="italie">Italie</option>
+        </optgroup> 
+      </select>
+    </fieldset>
+    <br>
+    <input type="submit" value="suivant">
+  </form>
     <header>
         <nav class="navbar">
           <img src="images/felix.png" alt="Logo" class="navbar-logo">
           <ul class="navbar-list">
-            <li><a href="#home">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#login">Log In</a></li>
@@ -17,3 +94,15 @@
         </nav>
       </header>
 </body>
+
+<!-- les attributs de input:
+     autocomplete="on": il propose de completer un textfield 
+     autofocus="autofocus": il y aura un focus sur le input sans souris ni rien
+     max=x et min=y: pour type number
+     placeholder="le text qui va apparaitre en gris avant d'ecrire  dans le champ"
+     un attribut qui met la valeur par defaut a une check list
+     ->pour checkbox et radio: checked="checked"
+     ->pour select: selected="selected"
+     REQ: pour les valeur ou le nom se répète on est pas obligé de mettre la valeur
+     required: pour empecher l'envoi du formulaire sans le remplissage du champ
+      -->

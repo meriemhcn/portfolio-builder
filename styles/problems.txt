@@ -1,0 +1,1 @@
+-> comment reajuster la page lorsque on change sa taille nrlml avec flex-shrink mais ca marche pas 
