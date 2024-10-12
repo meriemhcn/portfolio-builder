@@ -22,7 +22,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 1000px;
     flex-shrink: 1;
 
 }

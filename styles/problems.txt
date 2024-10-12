@@ -1,1 +1,3 @@
 -> comment reajuster la page lorsque on change sa taille nrlml avec flex-shrink mais ca marche pas 
+-> verification du mdp 
+-> les validations de html s'anulent quand j'utilise l'optio suivant donc je dois trouver une alternative
